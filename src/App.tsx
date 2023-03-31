@@ -48,7 +48,7 @@ function App() {
       const {
         data: { message },
       } = await axios.post<{ message: string }>(
-        "https://rgt-attendance-backend.onrender.com/attendance",
+        "https://rgt-register.onrender.com/attendance",
         values
       );
       setSuccess(message ?? 'Your data has been submitted. Thanks!')
